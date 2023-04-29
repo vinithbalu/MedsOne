@@ -1,12 +1,17 @@
 package com.gopher.MedsOne;
 
+import android.content.DialogInterface;
 import android.os.Bundle;
 
+import androidx.appcompat.app.AlertDialog;
+import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
 
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -23,6 +28,8 @@ public class HomeFragment extends Fragment {
     // TODO: Rename and change types of parameters
     private String mParam1;
     private String mParam2;
+
+    Button scanButton;
 
     public HomeFragment() {
         // Required empty public constructor
@@ -58,7 +65,39 @@ public class HomeFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_home, container, false);
+        View view = inflater.inflate(R.layout.fragment_home, container, false);
+        scanButton = view.findViewById(R.id.scan_button);
+        scanButton.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                System.out.println("scanButtonPressed");
+                showAlertDialogButtonClicked(v);
+            }
+        });
+        return view;
+    }
+
+    public void showAlertDialogButtonClicked(View view) {
+
+        // setup the alert builder
+        AlertDialog.Builder builder = new AlertDialog.Builder(getContext());
+        builder.setTitle("Select scan");
+
+        // add the buttons
+        String[] animals = {"QR Scan", "Prescription Scan", "Medicine Scan", "Cancel"};
+        builder.setItems(animals, new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+                switch (which) {
+                    case 0: // qr
+                    case 1: // pres
+                    case 2: // med
+                    case 3: // cancel
+                }
+            }
+        });
+
+        // create and show the alert dialog
+        AlertDialog dialog = builder.create();
+        dialog.show();
     }
 }
