@@ -11,4 +11,6 @@
     <color name="primary_color_dark">#357CA5</color>
     <color name="primary_color_dark_opacity">#50357CA5</color>
     <color name="primary_button_background">#6ECAA3</color>
+    <color name="card_background">#F5F9FF</color>
+    <color name="primary_text_color">#7A7A7A</color>
 </resources>
