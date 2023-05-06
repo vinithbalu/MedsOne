@@ -54,7 +54,7 @@ public class ScanQRcodeActivity extends AppCompatActivity {
 
             @Override
             public void onCodeScanned(String data) {
-
+                System.out.println("Scanned data: "+data);
             }
         });
     }
