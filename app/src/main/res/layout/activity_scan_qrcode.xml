@@ -7,7 +7,7 @@
     android:background="@color/black_shade_1"
     tools:context=".ScanQRcodeActivity">
 
-    <eu.livotov.labs.android.camview.CameraLiveView
+    <eu.livotov.labs.android.camview.ScannerLiveView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:id="@+id/cameraLiveView"
