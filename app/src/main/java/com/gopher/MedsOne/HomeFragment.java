@@ -1,6 +1,7 @@
 package com.gopher.MedsOne;
 
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
@@ -118,6 +119,9 @@ public class HomeFragment extends Fragment {
             public void onClick(DialogInterface dialog, int which) {
                 switch (which) {
                     case 0: // qr
+                        Intent i= new Intent(getContext(),ScanQRcodeActivity.class);
+                        startActivity(i);
+                        break;
                     case 1: // pres
                     case 2: // med
                     case 3: // cancel
