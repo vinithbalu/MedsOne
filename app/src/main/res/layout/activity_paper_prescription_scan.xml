@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    tools:context=".MainActivity">
+
+    <!--   ImageView: Show Image we took from Camera/Gallery   -->
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/showImgView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/baseline_image_24"
+        android:adjustViewBounds="true"
+        app:strokeWidth="2dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <!--   Image Button to Take Photo or Image from Gallery     -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/inputImageBtn"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:icon="@drawable/baseline_add_a_photo_24"
+            android:text="Take Image"
+            app:cornerRadius="5dp"
+            android:layout_marginEnd="5dp"
+            />
+
+        <!--     Function Button to recognize text from image   -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/recognizeTextBtn"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:icon="@drawable/baseline_qr_code_scanner_24"
+            android:text="Recognize Text"
+            app:cornerRadius="5dp"
+            android:layout_marginStart="5dp"
+            />
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <!--   Show Recognized Medicine Name from Image-->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/TextAppearance.MaterialComponents.Headline6"
+                android:text="Medicine Name"
+                android:layout_marginTop="10dp"
+                />
+
+            <TextView
+                android:id="@+id/medicineTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"/>
+
+            <!--   Show Recognized Text from Image-->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/TextAppearance.MaterialComponents.Headline6"
+                android:text="Recognized Text"
+                android:layout_marginTop="10dp"
+                />
+
+            <TextView
+                android:id="@+id/recognizedTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+</LinearLayout>
