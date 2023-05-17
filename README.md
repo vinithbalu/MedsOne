@@ -62,8 +62,8 @@ We welcome contributions from the community. If you would like to contribute to 
 ## About <a name = "about"></a>
 MedsOne is developed and maintained by Gopher Industries. For more information about our company and other projects, please visit our website.
 ## Contributors <a name = "contributors"></a>
-<a href = "https://github.com/Gopher-Industries/MedsOne/graphs/contributors">
-  <img src = "https://contrib.rocks/image?repo = Gopher-Industries/MedsOne"/>
+<a href="https://github.com/Gopher-Industries/MedsOne/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=Gopher-Industries/MedsOne" />
 </a>
 
-Made with [contributors-img](https://contrib.rocks).
+Made with [contrib.rocks](https://contrib.rocks).
