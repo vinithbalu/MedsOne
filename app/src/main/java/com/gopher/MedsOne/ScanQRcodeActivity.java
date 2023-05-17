@@ -9,6 +9,7 @@ import androidx.core.app.ActivityCompat;
 import androidx.core.content.ContextCompat;
 
 import android.content.ContentProvider;
+import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.graphics.Camera;
 import android.os.Bundle;
@@ -56,6 +57,9 @@ public class ScanQRcodeActivity extends AppCompatActivity {
             public void onCodeScanned(String data) {
                 System.out.println("Scanned data: "+data);
                 scannerTV.setText("Scanned: "+data);
+                Intent i = new Intent(ScanQRcodeActivity.this, MedicineDetailsActivity.class);
+                i.putExtra("barcode", data);
+                startActivity(i);
             }
         });
     }
