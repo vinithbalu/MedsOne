@@ -20,6 +20,7 @@
 - [Permissions](#permissions)
 - [Support](#support)
 - [About](#about)
+- [Contributors](#contributors)
 
 ## Key features <a name = "key_features"></a>
 - Identifying and analyising medication pill
@@ -60,3 +61,9 @@ Congratulations! You have successfully installed the MedsOne Android Application
 We welcome contributions from the community. If you would like to contribute to the App Name, please follow the guidelines of Gopher Industries.
 ## About <a name = "about"></a>
 MedsOne is developed and maintained by Gopher Industries. For more information about our company and other projects, please visit our website.
+## Contributors <a name = "contributors"></a>
+<a href = "https://github.com/Gopher-Industries/MedsOne/graphs/contributors">
+  <img src = "https://contrib.rocks/image?repo = Gopher-Industries/MedsOne"/>
+</a>
+
+Made with [contributors-img](https://contrib.rocks).
