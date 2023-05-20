@@ -123,6 +123,8 @@ public class HomeFragment extends Fragment {
                         startActivity(i);
                         break;
                     case 1: // pres
+                        Intent intent= new Intent(getContext(),PaperPrescriptionScan.class);
+                        startActivity(intent);
                     case 2: // med
                     case 3: // cancel
                 }
