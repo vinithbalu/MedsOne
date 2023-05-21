@@ -126,6 +126,8 @@ public class HomeFragment extends Fragment {
                         Intent intent= new Intent(getContext(),PaperPrescriptionScan.class);
                         startActivity(intent);
                     case 2: // med
+                        Intent prescriptionDetail= new Intent(getContext(),PrescriptionDetailActivity.class);
+                        startActivity(prescriptionDetail);
                     case 3: // cancel
                 }
             }
